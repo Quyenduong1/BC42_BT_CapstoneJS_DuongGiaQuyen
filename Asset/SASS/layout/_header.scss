@@ -1,0 +1,53 @@
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: $color-background2;
+    box-shadow: 0 2px 4px #777b80;
+}
+
+.header {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &>.group-phone{
+        &>a {
+            text-decoration: none;
+            color: black;
+            font-size: 40px;
+            &>span{
+                font-size: 30px;
+            }
+        }
+    }
+
+    &>.header-menu {
+        ul{
+            margin: auto;
+            li {
+                list-style: none;
+                display: inline;
+                .nav-text {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 20px;
+                    padding: 0 20px;
+                    transition: 0.2s;
+                    &:hover{
+                        color: $color-grey-light;
+                    }
+                    .icon-shop {
+                        font-size: 25px;
+                    }
+                }
+    
+            }
+        }
+        
+    }
+
+    
+}
+

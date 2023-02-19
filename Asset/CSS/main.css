@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+html, body {
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #eef0ff;
+}
+
+.padding-content {
+  padding-top: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%), linear-gradient(264.03deg, rgb(220, 229, 251) -10.27%, rgb(234, 236, 255) 35.65%, rgb(213, 236, 253) 110.66%);
+  box-shadow: 0 2px 4px #777b80;
+}
+
+.header {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header > .group-phone > a {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+}
+.header > .group-phone > a > span {
+  font-size: 30px;
+}
+.header > .header-menu ul {
+  margin: auto;
+}
+.header > .header-menu ul li {
+  list-style: none;
+  display: inline;
+}
+.header > .header-menu ul li .nav-text {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 0 20px;
+  transition: 0.2s;
+}
+.header > .header-menu ul li .nav-text:hover {
+  color: rgb(119, 114, 114);
+}
+.header > .header-menu ul li .nav-text .icon-shop {
+  font-size: 25px;
+}
+
+.carousel-content {
+  width: 75%;
+  margin: auto;
+}
+.carousel-content .service-item span {
+  text-align: center;
+  font-size: 50px;
+}
+
+.header-product {
+  background-color: white;
+}
+.header-product > .header-product-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+}
+.header-product > .header-product-content .title {
+  font-size: 2rem;
+}
+
+.product-content {
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%), linear-gradient(264.03deg, rgb(220, 229, 251) -10.27%, rgb(234, 236, 255) 35.65%, rgb(213, 236, 253) 110.66%);
+}
+.product-content > .row {
+  display: flex;
+  width: 75%;
+  margin: auto;
+}
+.product-content > .row .product-item {
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.product-content > .row .product-item img {
+  box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+  border-radius: 8px;
+}
+.product-content > .row .product-item .text {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.product-content > .row .product-item .text2 {
+  color: #ffc107;
+}
+.product-content > .row .product-item .btn-add-cart .button-cart {
+  background-color: #f5f9fe;
+  color: #2a73dd;
+  padding: 5px 25px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px #e2ebfc, -2px -2px 4px #fff;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+.product-content > .row .product-item .btn-add-cart .button-cart > span {
+  padding-left: 5px;
+}
+.product-content > .row .product-item .btn-add-cart .button-cart:hover {
+  box-shadow: inset 1px 1px 3px #e2ebfc, inset -2px -2px 5px #fff;
+}
+
+.footer-phone {
+  background-image: linear-gradient(to top left, rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%);
+}
+.footer-phone .footer-container .row {
+  width: 75%;
+  margin: auto;
+  align-items: center;
+}
+.footer-phone .footer-container .row ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-phone .footer-container .row ul li {
+  padding: 20px;
+  list-style: none;
+  display: inline;
+}
+.footer-phone .footer-container .row ul li:hover {
+  color: rgb(119, 114, 114);
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
