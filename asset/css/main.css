@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
-html, body {
+html,
+body {
   font-weight: 700;
   font-family: "Nunito Sans", sans-serif;
   background-color: #eef0ff;
@@ -9,10 +10,33 @@ html, body {
   padding-top: 100px;
 }
 
+.notification {
+  color: red;
+  margin-left: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.table td,
+.table th {
+  vertical-align: baseline;
+}
+
+.form-group {
+  margin-bottom: 0;
 }
 
 header {
@@ -141,4 +165,20 @@ header {
 .footer-phone .footer-container .row ul li:hover {
   color: rgb(119, 114, 114);
   cursor: pointer;
+}
+
+.content {
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 12px 12px 0 0;
+}
+.content .modal-header {
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    padding: 0 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
