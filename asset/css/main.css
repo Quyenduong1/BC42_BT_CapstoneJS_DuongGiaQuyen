@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
-html, body {
+html,
+body {
   font-weight: 700;
   font-family: "Nunito Sans", sans-serif;
   background-color: #eef0ff;
@@ -9,16 +10,48 @@ html, body {
   padding-top: 100px;
 }
 
+.notification {
+  color: red;
+  margin-left: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.table td,
+.table th {
+  vertical-align: baseline;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
 header {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%), linear-gradient(264.03deg, rgb(220, 229, 251) -10.27%, rgb(234, 236, 255) 35.65%, rgb(213, 236, 253) 110.66%);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0) 22.49%,
+      rgb(255, 255, 255) 73.49%
+    ),
+    linear-gradient(
+      264.03deg,
+      rgb(220, 229, 251) -10.27%,
+      rgb(234, 236, 255) 35.65%,
+      rgb(213, 236, 253) 110.66%
+    );
   box-shadow: 0 2px 4px #777b80;
 }
 
@@ -53,7 +86,16 @@ header {
   header {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%), linear-gradient(264.03deg, rgb(220, 229, 251) -10.27%, rgb(234, 236, 255) 35.65%, rgb(213, 236, 253) 110.66%);
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0) 22.49%,
+        rgb(255, 255, 255) 73.49%
+      ),
+      linear-gradient(
+        264.03deg,
+        rgb(220, 229, 251) -10.27%,
+        rgb(234, 236, 255) 35.65%,
+        rgb(213, 236, 253) 110.66%
+      );
     box-shadow: 0 2px 4px #777b80;
   }
   .header {
@@ -145,7 +187,16 @@ header {
 
 .product-content {
   width: 100%;
-  background: linear-gradient(rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%), linear-gradient(264.03deg, rgb(220, 229, 251) -10.27%, rgb(234, 236, 255) 35.65%, rgb(213, 236, 253) 110.66%);
+  background: linear-gradient(
+      rgba(255, 255, 255, 0) 22.49%,
+      rgb(255, 255, 255) 73.49%
+    ),
+    linear-gradient(
+      264.03deg,
+      rgb(220, 229, 251) -10.27%,
+      rgb(234, 236, 255) 35.65%,
+      rgb(213, 236, 253) 110.66%
+    );
   padding-top: 50px;
 }
 .product-content > .row {
@@ -207,7 +258,16 @@ header {
   }
   .product-content {
     width: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%), linear-gradient(264.03deg, rgb(220, 229, 251) -10.27%, rgb(234, 236, 255) 35.65%, rgb(213, 236, 253) 110.66%);
+    background: linear-gradient(
+        rgba(255, 255, 255, 0) 22.49%,
+        rgb(255, 255, 255) 73.49%
+      ),
+      linear-gradient(
+        264.03deg,
+        rgb(220, 229, 251) -10.27%,
+        rgb(234, 236, 255) 35.65%,
+        rgb(213, 236, 253) 110.66%
+      );
     padding-top: 100px;
   }
   .product-content > .row {
@@ -254,7 +314,11 @@ header {
   }
 }
 .footer-phone {
-  background-image: linear-gradient(to top left, rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%);
+  background-image: linear-gradient(
+    to top left,
+    rgba(255, 255, 255, 0) 22.49%,
+    rgb(255, 255, 255) 73.49%
+  );
 }
 .footer-phone .footer-container .row {
   width: 100%;
@@ -277,7 +341,11 @@ header {
 
 @media screen and (min-width: 768px) {
   .footer-phone {
-    background-image: linear-gradient(to top left, rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%);
+    background-image: linear-gradient(
+      to top left,
+      rgba(255, 255, 255, 0) 22.49%,
+      rgb(255, 255, 255) 73.49%
+    );
   }
   .footer-phone .footer-container .row {
     width: 75%;
@@ -297,4 +365,19 @@ header {
     color: rgb(119, 114, 114);
     cursor: pointer;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+.content {
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 12px 12px 0 0;
+}
+.content .modal-header {
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capstone</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- My CSS  -->
+    <link rel="stylesheet" href="/asset/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="group-phone">
+          <a href="#">
+            <i class="icon fa-brands fa-phoenix-squadron"></i>
+            <span>Group Phone</span>
+          </a>
+        </div>
+
+        <nav class="header-menu">
+          <ul>
+            <li><a class="nav-text" href="/customer/index.html">Store</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="card text-center">
+        <!-- Header -->
+        <div class="card-header myCardHeader">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <h3 class="text-left font-weight-bold">Product Management</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Body -->
+        <div class="card-body">
+          <div class="row mb-3">
+            <div class="col-md-6 col-sm-8">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search product"
+                  id="txtSearch"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-4 text-right">
+              <button
+                class="btn btn-success"
+                id="btnThem"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
+                Add Product
+              </button>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table
+              id="myTable"
+              class="table table-bordered table-hover myTable table-sm"
+            >
+              <thead>
+                <tr>
+                  <th style="width: 50px">STT</th>
+                  <th>Type</th>
+                  <th>Name</th>
+                  <th>Image</th>
+                  <th class="nowrap">
+                    <span class="mr-1">Price</span>
+                    <!-- <i
+                      class="fa fa-arrow-up mr-1"
+                      id="sortUp"
+                      style="cursor: pointer"
+                    ></i>
+                    <i
+                      class="fa fa-arrow-down"
+                      id="sortDown"
+                      style="cursor: pointer"
+                    ></i> -->
+                  </th>
+
+                  <th><em class="fa fa-cog"></em></th>
+                </tr>
+              </thead>
+              <tbody id="tableDanhSach"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="card-footer myCardFooter">
+          <nav>
+            <ul class="pagination justify-content-center" id="ulPhanTrang"></ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title" id="title"></h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="form-group">
+              <label>Name Product</label>
+              <input
+                id="name"
+                class="form-control"
+                placeholder="Enter name product"
+              />
+              <span class="notification" id="tbName"></span>
+            </div>
+            <div class="form-group">
+              <label>Price</label>
+              <input
+                id="price"
+                class="form-control"
+                placeholder="Enter price"
+              />
+              <span class="notification" id="tbPrice"></span>
+            </div>
+            <div class="form-group">
+              <label>Image</label>
+              <input
+                id="image"
+                class="form-control"
+                placeholder="Enter image"
+              />
+              <span class="notification" id="tbImage"></span>
+            </div>
+            <div class="form-group">
+              <label for="">Type</label>
+              <select class="form-control" id="type">
+                <option value="Phone">Phone</option>
+                <option value="Laptop">Laptop</option>
+                <option value="Head Phone">Head Phone</option>
+              </select>
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="../services/productApi.js"></script>
+    <script src="../model/Product.js"></script>
+    <script src="../controller/main.js"></script>
+  </body>
+</html>
