@@ -23,13 +23,26 @@
 </head>
 <body>
     <header>
-        <div class="header">
+        <div class="header navbar">
+
             <div class="group-phone">
                 <a href="#">
                     <i class="icon fa-brands fa-phoenix-squadron"></i>
                     <span>Group Phone</span>
                 </a>
             </div>
+
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto d-flex">
+                    <li><a class="nav-text" href="#">Home</a></li>
+                    <li><a  data-toggle="modal" data-target="#cartModal" class="nav-text" href="#"><i class="icon-shop fa-solid fa-cart-plus"></i></a></li>
+                </ul>
+            </div>
+
 
             <nav class="header-menu">
                 <ul>
@@ -63,31 +76,35 @@
     </header>
 
    <!-- carousel  -->
-   <div class="carousel-content single-item padding-content">
+   <div class="carousel-content single-item">
+
     <div class="service-item" style="display: flex; justify-content: center; align-items: center;">
         <div>
-            <img style="width: 500px; background-repeat: no-repeat; background-size: cover; margin: auto; display: inline;" src="../Asset/image/product1.png" alt="picture">
+            <img src="../Asset/image/product1.png" alt="picture">
         </div>
         <div>
             <span>Headphone</span>
         </div>
     </div>
+
     <div class="service-item" style="display: flex; justify-content: center; align-items: center;">
         <div>
-            <img style="width: 500px; background-repeat: no-repeat; background-size: cover; margin: auto; display: inline;" src="../Asset/image/product2.png" alt="picture">
+            <img src="../Asset/image/product2.png" alt="picture">
         </div>
         <div>
             <span>Iphone 14 <br> Pro Max</span>
         </div>
     </div>
+
     <div class="service-item" style="display: flex; justify-content: center; align-items: center;">
         <div>
-            <img style="width: 500px; background-repeat: no-repeat; background-size: cover; margin: auto; display: inline;" src="../Asset/image/product3.png" alt="picture">
+            <img src="../Asset/image/product3.png" alt="picture">
         </div>
         <div>
             <span>Tablet</span>
         </div>
     </div>
+
     </div>
 
     <!-- product  -->
@@ -99,7 +116,7 @@
             </div>
             <div class="search-product">
                 <form action="">
-                    <select style="padding: 5px 10px; border-radius: 15px;" id="phone">
+                    <select id="phone">
                         <option value=""></option>
                         <option value="Iphone">Iphone</option>
                         <option value="Tablet">Tablet</option>
@@ -109,17 +126,17 @@
             </div>
         </div>
     </div>
-    <div class="product-content padding-content">
+    <div class="product-content">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-4 col-md-6 col-lg-4">
                 <div class="product-item">
-                    <img style="width: 100%;" src="../Asset/image/product2.png" alt="logo">
-                    <div class="text d-flex justify-content-between">
+                    <img src="../Asset/image/product2.png" alt="logo">
+                    <div class="text">
                     <div class="text-title1">
-                        <h3>Iphone 14 Pro Max</h3>
+                        <span>Iphone 14 Pro Max</span>
                     </div>
                     <div class="text-price-1">
-                        <h3>$99.99</h3>
+                        <span>$99.99</span>
                     </div>
                     </div>
                     <div class="text2 d-flex justify-content-between">
@@ -137,15 +154,15 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-4 col-md-6 col-lg-4">
                 <div class="product-item">
-                    <img style="width: 100%;" src="../Asset/image/product1.png" alt="logo">
-                    <div class="text d-flex justify-content-between">
+                    <img src="../Asset/image/product1.png" alt="logo">
+                    <div class="text">
                     <div class="text-title1">
-                        <h3>Head Phone</h3>
+                        <span>Head Phone</span>
                     </div>
                     <div class="text-price-1">
-                        <h3>$19.99</h3>
+                        <span>$19.99</span>
                     </div>
                     </div>
                     <div class="text2 d-flex justify-content-between">
@@ -163,15 +180,15 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-4 col-md-6 col-lg-4">
                 <div class="product-item">
-                    <img style="width: 100%;" src="../Asset/image/product3.png" alt="logo">
-                    <div class="text d-flex justify-content-between">
+                    <img src="../Asset/image/product3.png" alt="logo">
+                    <div class="text">
                     <div class="text-title1">
-                        <h3>Tablet</h3>
+                        <span>Tablet</span>
                     </div>
                     <div class="text-price-1">
-                        <h3>$99.99</h3>
+                        <span>$99.99</span>
                     </div>
                     </div>
                     <div class="text2 d-flex justify-content-between">
@@ -243,7 +260,7 @@
     </script>
 
     <script>
-        $(document).onclick(function() {  
+        $(document).submit(function() {  
         $('#cartModal').modal('show');
     });
     </script>

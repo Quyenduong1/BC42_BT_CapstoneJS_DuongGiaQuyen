@@ -2,14 +2,14 @@
     background-image: $color-background3;
     .footer-container{
         .row{
-            width: 75%;
+            width: 100%;
             margin: auto;
             align-items: center;
             ul{
                 display: flex;
                 justify-content: flex-end;
                 li {
-                    padding: 20px;
+                    padding: 0.7rem;
                     list-style: none;
                     display: inline;
                     &:hover{
@@ -22,4 +22,32 @@
         }
     }
     
+}
+
+@include responsive("md"){
+    .footer-phone {
+        background-image: $color-background3;
+        .footer-container{
+            .row{
+                width: 75%;
+                margin: auto;
+                align-items: center;
+                ul{
+                    display: flex;
+                    justify-content: flex-end;
+                    li {
+                        padding: 20px;
+                        list-style: none;
+                        display: inline;
+                        &:hover{
+                            color: $color-grey-light;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+    }
 }

@@ -1,11 +1,37 @@
+// Mpbile first 
 .carousel-content{
     width: 75%;
     margin: auto;
+    padding: 40px 0px;
     .service-item{
+        img {
+            width: 9rem;
+        }
         span{
             text-align: center;
-            font-size: 50px;
+            font-size: 20px;
         }
     }
 }
 
+
+@include responsive("md"){
+    .carousel-content{
+        width: 75%;
+        margin: auto;
+        padding: 100px;
+    .service-item{
+        img {
+            width: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: auto;
+            display: inline;
+        }
+        span{
+            text-align: center;
+            font-size: 50px;
+            }
+        }
+    }
+}
