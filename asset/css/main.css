@@ -40,18 +40,9 @@ h6 {
 }
 
 header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0) 22.49%,
-      rgb(255, 255, 255) 73.49%
-    ),
-    linear-gradient(
-      264.03deg,
-      rgb(220, 229, 251) -10.27%,
-      rgb(234, 236, 255) 35.65%,
-      rgb(213, 236, 253) 110.66%
-    );
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%), linear-gradient(264.03deg, rgb(220, 229, 251) -10.27%, rgb(234, 236, 255) 35.65%, rgb(213, 236, 253) 110.66%);
   box-shadow: 0 2px 4px #777b80;
 }
 
@@ -73,7 +64,7 @@ header {
 .header .group-phone > a {
   text-decoration: none;
   color: black;
-  font-size: 40px;
+  font-size: 30px;
 }
 .header .group-phone > a > span {
   font-size: 20px;
@@ -81,21 +72,15 @@ header {
 .header .header-menu {
   display: none;
 }
+.header .btn {
+  font-size: 0.8rem;
+}
 
 @media screen and (min-width: 768px) {
   header {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0) 22.49%,
-        rgb(255, 255, 255) 73.49%
-      ),
-      linear-gradient(
-        264.03deg,
-        rgb(220, 229, 251) -10.27%,
-        rgb(234, 236, 255) 35.65%,
-        rgb(213, 236, 253) 110.66%
-      );
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%), linear-gradient(264.03deg, rgb(220, 229, 251) -10.27%, rgb(234, 236, 255) 35.65%, rgb(213, 236, 253) 110.66%);
     box-shadow: 0 2px 4px #777b80;
   }
   .header {
@@ -143,11 +128,13 @@ header {
   padding: 40px 0px;
 }
 .carousel-content .service-item img {
-  width: 9rem;
+  width: 6rem;
+  border-radius: 1rem;
 }
 .carousel-content .service-item span {
   text-align: center;
-  font-size: 20px;
+  font-size: 0.8rem;
+  margin-left: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -157,15 +144,17 @@ header {
     padding: 100px;
   }
   .carousel-content .service-item img {
-    width: 500px;
+    width: 25rem;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 1rem;
     margin: auto;
     display: inline;
   }
   .carousel-content .service-item span {
     text-align: center;
-    font-size: 50px;
+    font-size: 2rem;
+    margin-left: 1rem;
   }
 }
 .header-product {
@@ -187,16 +176,7 @@ header {
 
 .product-content {
   width: 100%;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0) 22.49%,
-      rgb(255, 255, 255) 73.49%
-    ),
-    linear-gradient(
-      264.03deg,
-      rgb(220, 229, 251) -10.27%,
-      rgb(234, 236, 255) 35.65%,
-      rgb(213, 236, 253) 110.66%
-    );
+  background: linear-gradient(rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%), linear-gradient(264.03deg, rgb(220, 229, 251) -10.27%, rgb(234, 236, 255) 35.65%, rgb(213, 236, 253) 110.66%);
   padding-top: 50px;
 }
 .product-content > .row {
@@ -205,7 +185,7 @@ header {
   margin: auto;
 }
 .product-content > .row .product-item img {
-  width: 100%;
+  width: 80%;
   background-size: cover;
   box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
   border-radius: 8px;
@@ -213,7 +193,7 @@ header {
 .product-content > .row .product-item .text {
   padding-top: 1rem;
   padding-bottom: 0.2rem;
-  font-size: 0.6rem;
+  font-size: 0.4rem;
 }
 .product-content > .row .product-item .text .text-title1 {
   padding-bottom: 0.2rem;
@@ -258,16 +238,7 @@ header {
   }
   .product-content {
     width: 100%;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0) 22.49%,
-        rgb(255, 255, 255) 73.49%
-      ),
-      linear-gradient(
-        264.03deg,
-        rgb(220, 229, 251) -10.27%,
-        rgb(234, 236, 255) 35.65%,
-        rgb(213, 236, 253) 110.66%
-      );
+    background: linear-gradient(rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%), linear-gradient(264.03deg, rgb(220, 229, 251) -10.27%, rgb(234, 236, 255) 35.65%, rgb(213, 236, 253) 110.66%);
     padding-top: 100px;
   }
   .product-content > .row {
@@ -276,16 +247,18 @@ header {
     margin: auto;
   }
   .product-content > .row .product-item {
+    width: 80%;
     flex-wrap: wrap;
     padding: 2rem;
+    position: relative;
   }
   .product-content > .row .product-item img {
     width: 100%;
     box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
     border-radius: 8px;
+    height: auto;
   }
   .product-content > .row .product-item .text {
-    display: flex;
     justify-content: space-between;
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -294,6 +267,16 @@ header {
   .product-content > .row .product-item .text2 {
     font-size: 0.75rem;
     color: #ffc107;
+  }
+  .product-content > .row .product-item #overlaySP {
+    width: 100%;
+    height: 100%;
+    box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+    background-color: rgba(230, 45, 76, 0.5);
+    transition: 0.2s;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .product-content > .row .product-item .btn-add-cart .button-cart {
     background-color: #f5f9fe;
@@ -314,11 +297,7 @@ header {
   }
 }
 .footer-phone {
-  background-image: linear-gradient(
-    to top left,
-    rgba(255, 255, 255, 0) 22.49%,
-    rgb(255, 255, 255) 73.49%
-  );
+  background-image: linear-gradient(to top left, rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%);
 }
 .footer-phone .footer-container .row {
   width: 100%;
@@ -341,11 +320,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .footer-phone {
-    background-image: linear-gradient(
-      to top left,
-      rgba(255, 255, 255, 0) 22.49%,
-      rgb(255, 255, 255) 73.49%
-    );
+    background-image: linear-gradient(to top left, rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%);
   }
   .footer-phone .footer-container .row {
     width: 75%;
@@ -380,4 +355,4 @@ header {
     width: 100%;
     padding: 0 10px;
   }
-}
+}/*# sourceMappingURL=main.css.map */

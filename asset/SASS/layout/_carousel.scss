@@ -5,11 +5,13 @@
     padding: 40px 0px;
     .service-item{
         img {
-            width: 9rem;
+            width: 6rem;
+            border-radius: 1rem;
         }
         span{
             text-align: center;
-            font-size: 20px;
+            font-size: 0.8rem;
+            margin-left: 1rem;
         }
     }
 }
@@ -22,15 +24,17 @@
         padding: 100px;
     .service-item{
         img {
-            width: 500px;
+            width: 25rem;
             background-repeat: no-repeat;
             background-size: cover;
+            border-radius: 1rem;
             margin: auto;
             display: inline;
         }
         span{
             text-align: center;
-            font-size: 50px;
+            font-size: 2rem;
+            margin-left: 1rem;
             }
         }
     }
