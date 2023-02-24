@@ -121,6 +121,27 @@ header {
   .header > .header-menu ul li .nav-text .icon-shop {
     font-size: 25px;
   }
+  .header .form-product .text-form .text-line1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    color: rgb(179, 170, 170);
+    font-weight: 300;
+  }
+  .header .form-product .text-form .text-line2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  .header .form-product .button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .header .form-product .button .btn-cart-1 i {
+    padding-right: 0.3rem;
+  }
 }
 .carousel-content {
   width: 75%;

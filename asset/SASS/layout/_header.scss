@@ -93,7 +93,35 @@ header {
             }
             
         }
-    
+
+        .form-product{
+            .text-form{
+                .text-line1{
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-top: 0.5rem;
+                    padding-bottom: 1rem;
+                    color: rgb(179, 170, 170);
+                    font-weight: 300;
+                }
+                .text-line2 {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-top: 0.5rem;
+                    padding-bottom: 1rem;
+                }
+            }
+
+            .button {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                .btn-cart-1{
+                    i{
+                        padding-right: 0.3rem;
+                    }
+                }
+            }
+        }
         
     }
 }
