@@ -1,4 +1,3 @@
-// getProducts();
 
 // function getProducts() {
 //     axios({
@@ -27,6 +26,3 @@
 //     },"");
 //     document.getElementById("overlaySP").innerHTML = html;
 // }
-
-
-
