@@ -103,73 +103,30 @@
                 data-target="#cartModal"
                 class="nav-text"
                 href="#"
-                ><i class="icon-shop fa-solid fa-cart-plus"></i
+                id="cart"
+                ><i class="icon-shop fa-solid fa-cart-plus"></i>
+                <span class="totalQuantity"></span
               ></a>
             </li>
           </ul>
         </nav>
-
-        <div
-          class="modal fade"
-          id="cartModal"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div
-            class="modal-dialog modal-lg modal-dialog-centered"
-            role="document"
-          >
-            <div class="modal-content">
-              <div class="modal-header border-bottom-0">
-                <h5 class="modal-title" id="exampleModalLabel">
-                  Your Shopping Cart
-                </h5>
-
-                <!-- /// Code Sản phẩm trong này nè//// -->
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
-              <div
-                class="modal-footer border-top-0 d-flex justify-content-between"
-              >
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Close
-                </button>
-                <button type="button" class="btn btn-success">Checkout</button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </header>
 
     <!-- carousel  -->
-    <div class="carousel-content single-item">
+    <div class="carousel-content single-item" style="margin-top: 90px">
       <div
         class="service-item"
         style="display: flex; justify-content: center; align-items: center"
       >
         <div>
           <img
-            src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+            src="https://trangthienlong.com.vn/wp-content/uploads/2022/10/iphone-14-mau-xanh-duong-blue-128gb-256gb-512gb-trang-thien-long-mobile.jpg"
             alt="picture"
           />
         </div>
         <div>
-          <span>Iphone X 64GB</span>
+          <span>IPhone 14 Plus 512GB</span>
         </div>
       </div>
 
@@ -179,27 +136,12 @@
       >
         <div>
           <img
-            src="https://cdn.tgdd.vn/Products/Images/42/217536/samsung-galaxy-m51-trang-new-600x600-600x600.jpg"
+            src="https://www.duchuymobile.com/images/variant_image/56/oppo-reno8-t-5g-den.jpg"
             alt="picture"
           />
         </div>
         <div>
-          <span>SamSung Galaxy M51</span>
-        </div>
-      </div>
-
-      <div
-        class="service-item"
-        style="display: flex; justify-content: center; align-items: center"
-      >
-        <div>
-          <img
-            src="https://didongviet.vn/pub/media/catalog/product//i/p/iphone-11-pro-max-256gb-didongviet_23.jpg"
-            alt="picture"
-          />
-        </div>
-        <div>
-          <span>Iphone 11 ProMax 256GB</span>
+          <span>OPPO Reno8 T 5G 256GB</span>
         </div>
       </div>
     </div>
@@ -209,127 +151,22 @@
       <div class="header-product">
         <div class="header-product-content padding-content">
           <div class="title">
-            <span>Các Sản Phẩm</span>
+            <span>Products</span>
           </div>
           <div class="search-product">
             <form action="">
-              <select id="phone">
-                <option value=""></option>
-                <option value="Iphone">Iphone</option>
-                <option value="SamSung">SamSung</option>
+              <select id="phone" class="type" onChange="getProducts()">
+                <option value="">All</option>
+                <option value="phone">Iphone</option>
+                <option value="laptop">Laptop</option>
+                <option value="tablet">Tablet</option>
               </select>
             </form>
           </div>
         </div>
       </div>
       <div class="product-content">
-        <div class="row">
-          <div class="col-4 col-md-6 col-lg-4">
-            <div class="product-item">
-              <img
-                src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
-                alt="logo"
-              />
-
-              <!-- ------  -->
-              <!-- <div id="overlaySP" class="product-overlay"></div> // nhap  -->
-              <!-- <table>
-                <thead></thead>
-                <tbody id="overlaySP"></tbody>
-              </table> -->
-
-              <!-- ----  -->
-
-              <div class="text">
-                <div class="text-title1">
-                  <span>Iphone X 64GB</span>
-                </div>
-                <div class="text-price-1">
-                  <span>$99.99</span>
-                </div>
-              </div>
-              <div class="text2 d-flex justify-content-between">
-                <div class="star-rate">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="btn-add-cart">
-                  <button class="button-cart">
-                    <i class="fa-solid fa-cart-shopping"></i
-                    ><span>add cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4 col-md-6 col-lg-4">
-            <div class="product-item">
-              <img
-                src="https://cdn.tgdd.vn/Products/Images/42/217536/samsung-galaxy-m51-trang-new-600x600-600x600.jpg"
-                alt="logo"
-              />
-              <div class="text">
-                <div class="text-title1">
-                  <span>SamSung Galaxy M51</span>
-                </div>
-                <div class="text-price-1">
-                  <span>$99.99</span>
-                </div>
-              </div>
-              <div class="text2 d-flex justify-content-between">
-                <div class="star-rate">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="btn-add-cart">
-                  <button class="button-cart">
-                    <i class="fa-solid fa-cart-shopping"></i
-                    ><span>add cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4 col-md-6 col-lg-4">
-            <div class="product-item">
-              <img
-                src="https://didongviet.vn/pub/media/catalog/product//i/p/iphone-11-pro-max-256gb-didongviet_23.jpg"
-                alt="logo"
-              />
-              <div class="text">
-                <div class="text-title1">
-                  <span>Iphone 11 ProMax 256GB</span>
-                </div>
-                <div class="text-price-1">
-                  <span>$99.99</span>
-                </div>
-              </div>
-              <div class="text2 d-flex justify-content-between">
-                <div class="star-rate">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="btn-add-cart">
-                  <button class="button-cart">
-                    <i class="fa-solid fa-cart-shopping"></i
-                    ><span>add cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="row" id="product"></div>
       </div>
     </div>
 
@@ -337,7 +174,7 @@
     <footer class="footer-phone padding-content">
       <div class="footer-container">
         <div class="row">
-          <div class="col-4">© 2023</div>
+          <div class="col-4">Group Phone © 2023</div>
           <div class="col-8">
             <ul class="nav">
               <li><a href="#"></a>Home</li>
@@ -348,6 +185,70 @@
         </div>
       </div>
     </footer>
+
+    <div
+      class="modal fade"
+      id="cartModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h3 class="modal-title" id="exampleModalLabel">
+              Your Shopping Cart
+            </h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">PRODUCT NAME</th>
+                    <th scope="col">IMAGE</th>
+                    <th scope="col">QUANTITY</th>
+                    <th scope="col">PRICE</th>
+                    <th scope="col">TOTAL</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody id="listItem"></tbody>
+                <tfoot id="totalPayment"></tfoot>
+              </table>
+            </div>
+          </div>
+
+          <div class="modal-footer border-top-0 d-flex justify-content-between">
+            <div>
+              <button
+                type="button"
+                class="btn btn-secondary mr-2"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-danger" id="emptyCart">
+                Clear Cart
+              </button>
+            </div>
+            <button type="button" class="btn btn-success" id="payment">
+              Payment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Jquery  -->
     <script
@@ -380,15 +281,13 @@
       });
     </script>
 
-    <script>
-      $(document).submit(function () {
-        $("#cartModal").modal("show");
-      });
-    </script>
-
-    <!-- Axios  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- MY JS  -->
-    <script src="../js/index.js"></script>
+    <script src="./services/productApi.js"></script>
+    <script src="./model/Cart.js"></script>
+    <script src="./model/CartItem.js"></script>
+    <script src="./model/Product.js"></script>
+    <script src="./controller/main.js"></script>
   </body>
 </html>

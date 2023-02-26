@@ -6,10 +6,6 @@ body {
   background-color: #eef0ff;
 }
 
-.padding-content {
-  padding-top: 100px;
-}
-
 .notification {
   color: red;
   margin-left: 2px;
@@ -44,6 +40,12 @@ header {
   padding-bottom: 5px;
   background-image: linear-gradient(rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%), linear-gradient(264.03deg, rgb(220, 229, 251) -10.27%, rgb(234, 236, 255) 35.65%, rgb(213, 236, 253) 110.66%);
   box-shadow: 0 2px 4px #777b80;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
 }
 
 .header {
@@ -74,6 +76,20 @@ header {
 }
 .header .btn {
   font-size: 0.8rem;
+}
+.header #cart .totalQuantity {
+  display: block;
+  position: absolute;
+  font-size: 15px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: white;
+  background-color: #000;
+  border-radius: 100%;
+  top: 6px;
+  right: 7px;
+  transition: all 0.5s;
 }
 
 @media screen and (min-width: 768px) {
@@ -125,7 +141,7 @@ header {
 .carousel-content {
   width: 75%;
   margin: auto;
-  padding: 40px 0px;
+  padding: 20px 0px;
 }
 .carousel-content .service-item img {
   width: 6rem;
@@ -141,7 +157,6 @@ header {
   .carousel-content {
     width: 75%;
     margin: auto;
-    padding: 100px;
   }
   .carousel-content .service-item img {
     width: 25rem;
@@ -159,6 +174,7 @@ header {
 }
 .header-product {
   background-color: white;
+  padding: 20px 0;
 }
 .header-product > .header-product-content {
   display: flex;
@@ -177,7 +193,6 @@ header {
 .product-content {
   width: 100%;
   background: linear-gradient(rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%), linear-gradient(264.03deg, rgb(220, 229, 251) -10.27%, rgb(234, 236, 255) 35.65%, rgb(213, 236, 253) 110.66%);
-  padding-top: 50px;
 }
 .product-content > .row {
   display: flex;
@@ -189,6 +204,7 @@ header {
   background-size: cover;
   box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
   border-radius: 8px;
+  height: 270px !important;
 }
 .product-content > .row .product-item .text {
   padding-top: 1rem;
@@ -197,10 +213,21 @@ header {
 }
 .product-content > .row .product-item .text .text-title1 {
   padding-bottom: 0.2rem;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .product-content > .row .product-item .text2 {
   font-size: 0.5rem;
   color: #ffc107;
+  align-items: center;
+}
+.product-content > .row .product-item .btn-add-cart {
+  font-size: 16px;
 }
 .product-content > .row .product-item .btn-add-cart .button-cart {
   background-color: #f5f9fe;
@@ -239,7 +266,6 @@ header {
   .product-content {
     width: 100%;
     background: linear-gradient(rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%), linear-gradient(264.03deg, rgb(220, 229, 251) -10.27%, rgb(234, 236, 255) 35.65%, rgb(213, 236, 253) 110.66%);
-    padding-top: 100px;
   }
   .product-content > .row {
     display: flex;
@@ -297,6 +323,7 @@ header {
   }
 }
 .footer-phone {
+  border-top: 1px solid #ccc;
   background-image: linear-gradient(to top left, rgba(255, 255, 255, 0) 22.49%, rgb(255, 255, 255) 73.49%);
 }
 .footer-phone .footer-container .row {
