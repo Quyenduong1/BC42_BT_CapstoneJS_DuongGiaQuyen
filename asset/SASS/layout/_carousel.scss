@@ -1,41 +1,39 @@
-// Mpbile first 
-.carousel-content{
-    width: 75%;
-    margin: auto;
-    padding: 40px 0px;
-    .service-item{
-        img {
-            width: 6rem;
-            border-radius: 1rem;
-        }
-        span{
-            text-align: center;
-            font-size: 0.8rem;
-            margin-left: 1rem;
-        }
+// Mpbile first
+.carousel-content {
+  width: 75%;
+  margin: auto;
+  padding: 20px 0px;
+  .service-item {
+    img {
+      width: 6rem;
+      border-radius: 1rem;
     }
+    span {
+      text-align: center;
+      font-size: 0.8rem;
+      margin-left: 1rem;
+    }
+  }
 }
 
-
-@include responsive("md"){
-    .carousel-content{
-        width: 75%;
+@include responsive("md") {
+  .carousel-content {
+    width: 75%;
+    margin: auto;
+    .service-item {
+      img {
+        width: 25rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1rem;
         margin: auto;
-        padding: 100px;
-    .service-item{
-        img {
-            width: 25rem;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 1rem;
-            margin: auto;
-            display: inline;
-        }
-        span{
-            text-align: center;
-            font-size: 2rem;
-            margin-left: 1rem;
-            }
-        }
+        display: inline;
+      }
+      span {
+        text-align: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+      }
     }
+  }
 }
