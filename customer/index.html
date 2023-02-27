@@ -109,8 +109,8 @@
           </ul>
         </nav>
 
-        <div
-          class="modal fade"
+          <!-- modal  -->
+          <div class="modal fade"
           id="cartModal"
           tabindex="-1"
           role="dialog"
@@ -127,7 +127,7 @@
                   Your Shopping Cart
                 </h5>
 
-                <!-- /// Code Sản phẩm trong này nè//// -->
+                
                 <button
                   type="button"
                   class="close"
@@ -138,9 +138,9 @@
                 </button>
               </div>
 
-                    <!-- div Them SP hinh anh JS  -->
+                    
                     <div id="ThemSP"></div>
-                    <!-- cart-Product  -->
+                   
                    <div class="form-product">
                     <form style="background-color: #eef0ff; width: 100%; height: auto;" action="">
                         <div class="text-form ">
@@ -189,7 +189,8 @@
               </div>
             </div>
           </div>
-        </div>
+          </div>
+          
       </div>
     </header>
 
@@ -268,18 +269,9 @@
                 alt="logo"
               />
 
-              <!-- ------  -->
-              <!-- <div id="overlaySP" class="product-overlay"></div> // nhap  -->
-              <!--  <table>
-                <thead></thead>
-                <tbody id="overlaySP"></tbody>
-              </table> --> -->
-
-              <!-- ----  -->
-
               <div class="text">
                 <div class="text-title1">
-                  <span>Iphone X 64GB</span>
+                  <span id="name">Iphone X 64GB</span>
                 </div>
                 <div class="text-price-1">
                   <span>$99.99</span>
@@ -294,7 +286,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="btn-add-cart">
-                  <button class="button-cart">
+                  <button data-price="99.99" id="add-cartSP" class="button-cart">
                     <i class="fa-solid fa-cart-shopping"></i
                     ><span>add cart</span>
                   </button>
@@ -425,7 +417,8 @@
 
     <!-- Axios  -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <!-- MY JS  -->
-    <script src="../js/index.js"></script>
+    <script src="../JS/index.js"></script>
   </body>
 </html>
